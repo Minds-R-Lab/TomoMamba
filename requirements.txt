@@ -1,0 +1,36 @@
+# TomoMamba — Python dependencies
+#
+# Reported results were produced with Python 3.11, PyTorch 2.8 and CUDA 12.8
+# on a single NVIDIA RTX 4090 Laptop GPU (16 GB).
+#
+#   pip install -r requirements.txt
+#
+# mamba-ssm and causal-conv1d are listed at the bottom because they compile
+# CUDA kernels and need a matching toolchain. If they will not build,
+# centernet_models.py falls back to a pure PyTorch scan: slower, numerically
+# close, but not bit-identical.
+
+# --- core ---
+torch>=2.8
+torchvision>=0.23
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.3
+
+# --- imaging and DICOM ---
+opencv-python>=4.8
+scikit-image>=0.22
+pydicom>=2.4
+pylibjpeg>=2.0
+pylibjpeg-libjpeg>=2.0
+
+# --- analysis, plotting, utilities ---
+matplotlib>=3.7
+pandas>=2.0
+tqdm>=4.65
+tensorboard>=2.14      # training-loop logging in train_stage2.py / train_baselines.py
+thop>=0.1.1            # FLOP counting for compute_cost.py
+
+# --- selective state-space kernels (require a CUDA toolchain) ---
+mamba-ssm>=2.0
+causal-conv1d>=1.2
