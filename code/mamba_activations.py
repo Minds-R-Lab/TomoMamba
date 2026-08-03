@@ -42,9 +42,10 @@ def patched_forward(self, features):
 
 model.cross_slice.forward = types.MethodType(patched_forward, model.cross_slice)
 
-# Pick 4 good cases (middle slice lesions, mix of cancer and benign)
+# Four representative cases with mid-stack annotated slices, cancer and benign.
+# Selected to illustrate gate behaviour, not classification outcome.
 cases_to_show = [
-    ('Cancer', 'DBT-P01700_DBT-S01353_lcc'),    # slice 4, strong lesion
+    ('Cancer', 'DBT-P01700_DBT-S01353_lcc'),    # slice 4
     ('Cancer', 'DBT-P01207_DBT-S03000_lcc1'),   # slice 5
     ('Cancer', 'DBT-P03027_DBT-S03974_lcc'),    # slice 4
     ('Benign', 'DBT-P03728_DBT-S03978_rmlo'),   # slice 6
