@@ -1,0 +1,59 @@
+{
+  "dump": "dumps_val_all_locked_20260708/per_case_BASELINE_(v5.2).jsonl",
+  "n_volumes": 75,
+  "cancer_volumes": 37,
+  "benign_volumes": 38,
+  "detection_misses": [
+    "DBT-P01150_DBT-S04884_lcc",
+    "DBT-P03621_DBT-S03266_lmlo"
+  ],
+  "classification_misses": [
+    "DBT-P00431_DBT-S03956_rmlo",
+    "DBT-P00655_DBT-S00319_rcc",
+    "DBT-P00655_DBT-S00319_rmlo",
+    "DBT-P01150_DBT-S04884_lmlo",
+    "DBT-P01207_DBT-S03000_lmlo1",
+    "DBT-P01700_DBT-S01353_lcc",
+    "DBT-P01967_DBT-S00345_lmlo",
+    "DBT-P02989_DBT-S01022_rcc",
+    "DBT-P03027_DBT-S03974_lmlo",
+    "DBT-P03403_DBT-S04944_lmlo",
+    "DBT-P03598_DBT-S03655_rmlo",
+    "DBT-P04596_DBT-S01843_rmlo"
+  ],
+  "fallback_misses": [
+    "DBT-P00714_DBT-S01360_rcc",
+    "DBT-P01490_DBT-S00832_rcc",
+    "DBT-P01490_DBT-S00832_rmlo",
+    "DBT-P02598_DBT-S02915_rmlo",
+    "DBT-P02686_DBT-S00620_lmlo"
+  ],
+  "benign_called_cancer": [
+    "DBT-P00213_DBT-S01181_lcc",
+    "DBT-P00213_DBT-S01181_lmlo",
+    "DBT-P00866_DBT-S02251_lcc",
+    "DBT-P01152_DBT-S00310_lcc",
+    "DBT-P01153_DBT-S02202_lcc",
+    "DBT-P01941_DBT-S01647_rcc",
+    "DBT-P01941_DBT-S01647_rmlo",
+    "DBT-P04346_DBT-S01871_rcc",
+    "DBT-P04346_DBT-S01871_rmlo"
+  ],
+  "fp_boxes_per_cancer_volume": 1.5135135135135136,
+  "fp_boxes_per_benign_volume": 1.4210526315789473,
+  "patient_false_negatives": [
+    "DBT-P00431",
+    "DBT-P00655",
+    "DBT-P01150",
+    "DBT-P01490",
+    "DBT-P02989"
+  ],
+  "patient_false_positives": [
+    "DBT-P00213",
+    "DBT-P00866",
+    "DBT-P01152",
+    "DBT-P01153",
+    "DBT-P01941",
+    "DBT-P04346"
+  ]
+}

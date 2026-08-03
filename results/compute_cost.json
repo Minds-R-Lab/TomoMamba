@@ -1,0 +1,57 @@
+{
+  "input_shape": [
+    1,
+    15,
+    384,
+    384
+  ],
+  "n_iter": 50,
+  "device": "cuda",
+  "models": {
+    "ResNet-18 classifier": {
+      "params": 12106562,
+      "gflops_per_volume": 359.720439808,
+      "ms_per_volume": 27.2576582399779,
+      "ms_per_breast": 54.5153164799558,
+      "ms_per_patient": 109.0306329599116,
+      "volumes_per_second": 36.686937344211515,
+      "peak_mb": 1008.83837890625
+    },
+    "ResNet-18 + CenterNet": {
+      "params": 13325257,
+      "gflops_per_volume": 451.71523584,
+      "ms_per_volume": 32.49938722001389,
+      "ms_per_breast": 64.99877444002777,
+      "ms_per_patient": 129.99754888005555,
+      "volumes_per_second": 30.769810926901922,
+      "peak_mb": 1059.3056640625
+    },
+    "ResNet-18 + BiGRU + CN": {
+      "params": 13432905,
+      "gflops_per_volume": 481.7608704,
+      "ms_per_volume": 41.788607939961366,
+      "ms_per_breast": 83.57721587992273,
+      "ms_per_patient": 167.15443175984547,
+      "volumes_per_second": 23.92996678512772,
+      "peak_mb": 1295.94140625
+    },
+    "ResNet-18 + Transformer + CN": {
+      "params": 13499081,
+      "gflops_per_volume": 479.31899904,
+      "ms_per_volume": 59.93284275988117,
+      "ms_per_breast": 119.86568551976234,
+      "ms_per_patient": 239.73137103952467,
+      "volumes_per_second": 16.685342359054534,
+      "peak_mb": 1165.68896484375
+    },
+    "TomoMamba": {
+      "params": 13474889,
+      "gflops_per_volume": 460.91649024,
+      "ms_per_volume": 75.39329794002697,
+      "ms_per_breast": 150.78659588005394,
+      "ms_per_patient": 301.5731917601079,
+      "volumes_per_second": 13.263778443482721,
+      "peak_mb": 1273.8349609375
+    }
+  }
+}

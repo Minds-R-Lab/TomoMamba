@@ -1,0 +1,20 @@
+{
+  "meta_root": "/mnt/e/DBT_CancerBenignNormal_Gradient_1024_15/metadata/validation",
+  "dump": "dumps_val_all_locked_20260708/per_case_BASELINE_(v5.2).jsonl",
+  "at_position_0": {
+    "n_volumes": 46,
+    "n_gt": 46,
+    "n_matched": 34,
+    "det_rate": 0.7391304347826086,
+    "fp_per_vol": 1.5869565217391304,
+    "volume_auc": 0.7619047619047619
+  },
+  "elsewhere": {
+    "n_volumes": 29,
+    "n_gt": 29,
+    "n_matched": 20,
+    "det_rate": 0.6896551724137931,
+    "fp_per_vol": 1.2758620689655173,
+    "volume_auc": 0.5625
+  }
+}

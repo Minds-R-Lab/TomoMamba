@@ -1,0 +1,92 @@
+{
+  "split": "test",
+  "n_breasts": 738,
+  "n_cancer": 30,
+  "n_abnormal": 60,
+  "stage1": {
+    "auc": 0.9695550639134709,
+    "sens": 0.8833333333333333,
+    "spec": 0.9336283185840708,
+    "threshold": 0.139,
+    "forwarded": 98,
+    "cancers_lost": 3,
+    "benign_lost": 4,
+    "n_benign": 30
+  },
+  "end_to_end": {
+    "hard": {
+      "auc": 0.9209981167608287,
+      "sens@0.5": 0.6666666666666666,
+      "spec@0.5": 0.9646892655367232,
+      "ci95": [
+        0.8588267622945892,
+        0.9736124040471867
+      ]
+    },
+    "soft": {
+      "auc": 0.9380414312617703,
+      "sens@0.5": 0.4666666666666667,
+      "spec@0.5": 0.981638418079096,
+      "ci95": [
+        0.8818660631458723,
+        0.9813008828837282
+      ]
+    }
+  },
+  "stage1_sweep": [
+    {
+      "tau": 0.05,
+      "forwarded": 139,
+      "cancers_lost": 2,
+      "auc_hard": 0.9257768361581921
+    },
+    {
+      "tau": 0.1,
+      "forwarded": 112,
+      "cancers_lost": 3,
+      "auc_hard": 0.9156779661016948
+    },
+    {
+      "tau": 0.139,
+      "forwarded": 98,
+      "cancers_lost": 3,
+      "auc_hard": 0.9209981167608287
+    },
+    {
+      "tau": 0.2,
+      "forwarded": 90,
+      "cancers_lost": 3,
+      "auc_hard": 0.9238700564971751
+    },
+    {
+      "tau": 0.3,
+      "forwarded": 82,
+      "cancers_lost": 4,
+      "auc_hard": 0.9096516007532957
+    },
+    {
+      "tau": 0.4,
+      "forwarded": 77,
+      "cancers_lost": 5,
+      "auc_hard": 0.8956685499058381
+    },
+    {
+      "tau": 0.5,
+      "forwarded": 70,
+      "cancers_lost": 5,
+      "auc_hard": 0.8982815442561206
+    },
+    {
+      "tau": 0.6,
+      "forwarded": 66,
+      "cancers_lost": 5,
+      "auc_hard": 0.8993879472693033
+    },
+    {
+      "tau": 0.7,
+      "forwarded": 63,
+      "cancers_lost": 5,
+      "auc_hard": 0.9000235404896422
+    }
+  ]
+}

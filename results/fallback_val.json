@@ -1,0 +1,45 @@
+{
+  "dump": "dumps_val_all_locked_20260708/per_case_BASELINE_(v5.2).jsonl",
+  "n_volumes": 75,
+  "n_fallback": 10,
+  "fallback_rate": 0.13333333333333333,
+  "volume_roi": {
+    "n": 65,
+    "n_cancer": 32,
+    "auc": 0.7140151515151515,
+    "sens": 0.5625,
+    "spec": 0.7272727272727273,
+    "J": 0.2897727272727273,
+    "acc": 0.6461538461538462
+  },
+  "volume_fallback": {
+    "n": 10,
+    "n_cancer": 5,
+    "auc": 0.52,
+    "sens": 0.0,
+    "spec": 1.0,
+    "J": 0.0,
+    "acc": 0.5
+  },
+  "patient_all": {
+    "n": 40,
+    "n_cancer": 20,
+    "auc": 0.7975,
+    "sens": 0.75,
+    "spec": 0.7,
+    "J": 0.44999999999999996,
+    "acc": 0.725
+  },
+  "patient_roi_only": {
+    "n": 39,
+    "n_cancer": 19,
+    "auc": 0.8210526315789474,
+    "sens": 0.7894736842105263,
+    "spec": 0.7,
+    "J": 0.4894736842105263,
+    "acc": 0.7435897435897436
+  },
+  "patients_without_roi_view": [
+    "DBT-P01490"
+  ]
+}
