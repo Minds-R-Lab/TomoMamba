@@ -1,5 +1,5 @@
 {
-  "meta_root": "/mnt/e/DBT_CancerBenignNormal_Gradient_1024_15/metadata/test",
+  "meta_root": "<DATA_ROOT>/metadata/test",
   "dump": "dumps_test_all_locked_20260708/per_case_BASELINE_(v5.2).jsonl",
   "at_position_0": {
     "n_volumes": 81,

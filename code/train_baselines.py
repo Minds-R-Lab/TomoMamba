@@ -515,7 +515,8 @@ def eval_epoch_det(model, dataloader, loss_fn, device, use_amp=True, spatial_siz
 def main():
     parser = argparse.ArgumentParser(description="Train controlled baselines")
     parser.add_argument('--baseline', type=int, required=True, choices=[1, 2, 3, 4],
-                        help='Baseline number: 1=ResNet-18 Cls, 2=ResNet-18+CenterNet, 3=ResNet-18+BiGRU+CenterNet')
+                        help='Baseline number: 1=ResNet-18 Cls, 2=ResNet-18+CenterNet, '
+                             '3=ResNet-18+BiGRU+CenterNet, 4=ResNet-18+Transformer+CenterNet')
     parser.add_argument('--data_root', default='/mnt/e/DBT_CancerBenignNormal_Gradient_1024_15')
     parser.add_argument('--save_dir', default=None,
                         help='Override save directory (default: /mnt/e/DBT_Stage2_Baseline_{N})')
